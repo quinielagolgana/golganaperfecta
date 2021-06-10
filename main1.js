@@ -1,4 +1,4 @@
-let res = ['_','_','_','_','_','_','_','_'];
+let res = ['_','_','_','_','_','_','_','_','_'];
 let quantity = localStorage.getItem('quantity');
 let name = localStorage.getItem("alias");
 let combinations = false;
@@ -23,7 +23,7 @@ function start(){
             else
                 break;
         }
-    document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
+    document.getElementById("total").innerHTML = "Total: $" + quantity*25 +"\n";
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
 }  
@@ -41,7 +41,7 @@ function selection(element){
             res[index] += element.id.slice(0,1);
             res[index] = res[index].split('_').join('');
         }
-        element.style.backgroundColor = "rgb(101, 191, 243)";
+        element.style.backgroundColor = "rgb(250, 30, 30)";
     }
     else{
         if(combinations){
@@ -100,8 +100,7 @@ function send(){
     let whatsapptext = res.join("%20%20")
     whatsapptext = encodeURI(localStorage.getItem("results"));
     whatsapptext = whatsapptext.split('*').join('%0D').replace(/#/g,"");
-    window.location.href = "http://wa.me/525522997127?text="+whatsapptext;} 
-
+    window.location.href = "https://wa.me/523317816346?text="+whatsapptext;}
 }
 
 function save(){
@@ -132,11 +131,11 @@ function deleteall(){
 }
 
 function clean(){
-    res = ['_','_','_','_','_','_','_','_']
+    res = ['_','_','_','_','_','_','_','_','_']
     let container = document.getElementById("text");
     container.innerHTML = res.join("\xa0\xa0");
     spans = document.querySelectorAll(".quiniela span");
-    for (var i=0; i<24;i++)
+    for (var i=0; i<27;i++)
         spans[i].style.backgroundColor = "";
     document.getElementById("costo").innerHTML = "Costo: $0";
     document.getElementById("numquinielas").innerHTML = "0 Quiniela(s)";
@@ -155,7 +154,7 @@ function updatedisplay(){
     else
         display.innerHTML += `<div>` +  res.join("\xa0\xa0") + "\xa0\xa0" + name + "*\xa0\xa0" + `</div>`;
 
-    document.getElementById("total").innerHTML = "Total: $" + quantity*10;
+    document.getElementById("total").innerHTML = "Total: $" + quantity*25;
 
     if (display.childElementCount > 0)
     display.lastElementChild.innerHTML += `<button id="undo" onclick="remove()"><ion-icon name="arrow-undo-outline"></ion-icon></button>`;
@@ -192,7 +191,7 @@ function allowcombination(){
 
 function calculate(){
     aux = 1;
-    for (var i=0;i<8;i++){
+    for (var i=0;i<9;i++){
         aux*= res[i].length;
     }
     quantity = localStorage.getItem("quantity");
@@ -210,7 +209,7 @@ function random(){
     clean();
     let container = document.getElementById("text");
     let partidos = document.getElementsByClassName("partido");
-    for (var i = 0; i < 8; i++){
+    for (var i = 0; i < 9; i++){
         var r = getRandomInt(0,2);
         partidos[i].getElementsByTagName("span")[r].style.backgroundColor = "rgb(250, 30, 30)";
         res[i] = ["L","E","V"][r];
@@ -228,10 +227,10 @@ function getRandomInt(min, max) {
 function costoactual(){
     if (true){
         let aux2 = 1;
-        for (var i=0;i<8;i++){
+        for (var i=0;i<9;i++){
              aux2*= res[i].length;
         }
-        document.getElementById("costo").innerHTML = "Costo: $" + aux2*10;
+        document.getElementById("costo").innerHTML = "Costo: $" + aux2*25;
         document.getElementById("numquinielas").innerHTML = aux2 + " Quiniela(s)"
     }
 }
@@ -248,7 +247,7 @@ function remove(){
         last [0] = last[0].split('\n').join('');
 
         let aux3 = 1;
-        for (var i=0;i<8;i++){
+        for (var i=0;i<9;i++){
             aux3*= last[i].length;
             }
         quantity -= aux3;
@@ -259,7 +258,7 @@ function remove(){
         display.removeChild(display.lastElementChild);
 
         document.querySelector('.botonenviar span').textContent = quantity;
-        document.getElementById("total").innerHTML = "Total: $" + quantity*10 +"\n";
+        document.getElementById("total").innerHTML = "Total: $" + quantity*25 +"\n";
 
         localStorage.setItem('quantity', quantity);
 
