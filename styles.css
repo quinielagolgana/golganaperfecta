@@ -7,8 +7,7 @@
 
 .quiniela{
     margin: auto;
-    background-image: url("https://scontent.fmex3-2.fna.fbcdn.net/v/t39.30808-6/500743341_1248317900136032_5291733363782789760_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHM0B3kVlr9m0w9B4d85woDh9MOMEHnGuaH0w4wQeca5jycYjuv-KuhJjZmCtbqeWyqX2O4VCULyZBbEpRR4WEQ&_nc_ohc=NNn3I5GxkQgQ7kNvwEpkg9c&_nc_oc=AdnHGAJW6_x8LmuQnOmgI2WHMM9l_1FOt_FYgsK1NOG1p-JxnnabQ7FpC5YKBSSAlPE&_nc_zt=23&_nc_ht=scontent.fmex3-2.fna&_nc_gid=TFdobCr5dYjAiz6bWNNFmg&oh=00_AfJQBd6ptgfI4r0i-8IbSPEsZ4PvSsLZ1LgVNBhGR_aAHQ&oe=683E9FF2");
-    /*background-image: url("https://scontent.fmex1-6.fna.fbcdn.net/v/t39.30808-6/499982238_1243759237258565_2251193888017669834_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFgfUdLjL9BamgrqxVMcwxdCwhV30ieZ-gLCFXfSJ5n6IbU9xNH4n_F07SOmJzqu2jWng-Pzj3RR6OIvWDNDdgl&_nc_ohc=649CPFm9PqoQ7kNvwEkeEa7&_nc_oc=Adm9d7jIqfTi1uf8gUdJSyfZDsRS9ikIiZ5Vhw_O9ETonu8sh0XjBDLG87lsnv90Q5ASpIKdT84pLI9PIf26afbo&_nc_zt=23&_nc_ht=scontent.fmex1-6.fna&_nc_gid=DhArEkrZQ9ff5RdqJiBv4g&oh=00_AfIu7-CR0z1kIXS21gGjsnImszLd7cORTaKft66P0XIGWw&oe=68365A55");*/
+    background-image: url("https://scontent.fmex3-2.fna.fbcdn.net/v/t39.30808-6/503651132_1251315069836315_3313813616737071607_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFRDbhvSwOM80KmpPrnjPMgrCJTmkqL7gSsIlOaSovuBL9BbqBQb2mabm0XsAYvCAWMcoYD_ZPdcWAoK3HQ7eXJ&_nc_ohc=zgE9mZj-sz8Q7kNvwHK6tNy&_nc_oc=Adn5Bsys4lrQWI3Nz0UaLjB2mMx0cuDE0oCibzmf5DWeENcooknGpwuU4pPrrpCE4Ds&_nc_zt=23&_nc_ht=scontent.fmex3-2.fna&_nc_gid=KZV-xL-rsnNgC0UwVSod-w&oh=00_AfIfD1h2c5BkKh2kWKVyaAl0ed-N4Z85c0mYWhz4_3CioA&oe=6843E586");
     background-size: 100%;
     background-repeat: no-repeat;
     max-width: 400px;
@@ -74,7 +73,7 @@ body{
     max-width: 400px;
     margin: auto;
     background-color: rgb(6,12,37);
-    background-image: url("https://scontent.fmex1-1.fna.fbcdn.net/v/t1.6435-9/208936039_342831580684673_5349911308556824201_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=fl7-sLYJyAMAX-z8D9W&_nc_ht=scontent.fmex1-1.fna&oh=cc9f994a0bba1ba2dd927fd597e27036&oe=60E08CCE");
+    background-image: url("");
     background-repeat: repeat-y;
     background-position: top;
 }
